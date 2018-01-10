@@ -3,7 +3,7 @@
 * Simple contact form demo, w3c compliant, html and php validation, error notifications, smtp email, bot secure
 * using php7, html5, jquery
 * uses multiple spam protection techniques
-* another using bootstrap 4 - http://#
+* another using bootstrap 4 - https://github.com/phpgraham/contactform-bootstrap
 * another using bootstrap 4 and vue - http://#
 * another using laravel and angularjs - http://#
 * another using nodejs - http://#
@@ -129,7 +129,8 @@ function clean_input($data) {
 <body>
 
     <header class="body">
-      <h1>Contact Form</h1>
+      <h1>Contact Form Demo</h1>
+      <p>Demo code using html5 and jquery</p>
     </header>
 
     <section class="body">
@@ -144,7 +145,7 @@ function clean_input($data) {
         <?php } ?>
         <?php if(isset($success) && $success) { ?>
           <ul class="successMessages">
-              <li><span class="fa fa-check-circle">&nbsp;</span><?=htmlspecialchars($success)?></li>
+            <li><span class="fa fa-check-circle">&nbsp;</span><?=htmlspecialchars($success)?></li>
           </ul>
         <?php } ?>
 
@@ -174,7 +175,6 @@ function clean_input($data) {
     <footer class="body">
     </footer>
 
-</body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
         crossorigin="anonymous"></script>
@@ -185,4 +185,5 @@ $(document).ready(
   }
 );
 </script>
+</body>
 </html>
